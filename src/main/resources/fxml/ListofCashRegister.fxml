@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="/style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mojprogram.elkosz.controllers.ListofCashRegisterController">
+   <children>
+      <TableView fx:id="cashRegisterFxTableView" prefHeight="600.0" prefWidth="1150.0">
+        <columns>
+          <TableColumn fx:id="CompanyNameColumn" prefWidth="300.0" text="Nazwa Firmy" />
+          <TableColumn fx:id="TypeofCashRegisterColumn" prefWidth="160.0" text="Model Kasy " />
+            <TableColumn fx:id="SerialNumerColumn" minWidth="0.0" prefWidth="166.0" text="Numer seryjny" />
+            <TableColumn fx:id="BuyColumn" prefWidth="182.0" text=" Data Fiskalizacji" />
+            <TableColumn fx:id="LastCheckColumn" prefWidth="181.0" text="Następny Przegląd" />
+            <TableColumn fx:id="CheackColumn" prefWidth="160.0" text="Przegląd" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

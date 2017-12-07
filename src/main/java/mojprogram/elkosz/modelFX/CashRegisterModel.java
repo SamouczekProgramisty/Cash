@@ -48,6 +48,15 @@ public class CashRegisterModel {
         this.cashRegisterFxObjectProperty.set(cashMachineFxObjectProperty);
     }
 
+    public void pickCompany(int companyId) {
+        try {
+            Company company = new CompanyDao().findById(Company.class, companyId);
+            cashRegisterFxObjectProperty.get().setCompany(company);
+        } catch (ApplicationException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public void saveCashRegister() throws ApplicationException {
         CashRegister cashRegister = ConverterCashRegister.convertToCashRegister(this.getCashMachineFxObjectProperty());
 

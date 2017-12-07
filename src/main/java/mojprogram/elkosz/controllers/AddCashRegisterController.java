@@ -101,6 +101,7 @@ public class AddCashRegisterController {
 
     public void setSelected(CompanyFx selected){
         this.selected=selected;
+        cashRegisterModel.pickCompany(selected.getId());
        this.companyTextField.setText(this.selected.getCompanyNameFx());
        //this.companyTextField.promptTextProperty().bindBidirectional(selected.companyNameFxProperty());
     }

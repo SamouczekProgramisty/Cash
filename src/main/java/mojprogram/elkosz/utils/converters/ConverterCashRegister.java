@@ -11,7 +11,7 @@ public class ConverterCashRegister {
     public static CashRegister convertToCashRegister(CashRegisterFx cashRegisterFx){
         CashRegister cashRegister = new CashRegister();
         cashRegister.setCash_id(cashRegisterFx.getId_cashRegister());
-        //cashRegister.setCompany(cashRegisterFx.getCompany());
+        cashRegister.setCompany(cashRegisterFx.getCompany());
         cashRegister.setCash_id(cashRegisterFx.getId_cashRegister());
         cashRegister.setModel(cashRegisterFx.getModelfx());
         cashRegister.setSerialNumber(cashRegisterFx.getSrialnumberFX());

@@ -19,7 +19,7 @@ public class DbManager {
 
     public static void initDatabase(){
         createConnection();
-        dropTable();
+        // dropTable();
         createTable();
         closeConnectionSource();
     }
